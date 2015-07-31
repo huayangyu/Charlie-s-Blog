@@ -1,0 +1,13 @@
+# Site settings
+title: Charlie Hua
+email: lovehuayangyu@163.com
+description: "this is Charlie's website ,ohhhhhh,fantastic!"
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+twitter_username: 
+github_username:  
+
+# Build settings
+markdown: kramdown
+
+port: 8080
