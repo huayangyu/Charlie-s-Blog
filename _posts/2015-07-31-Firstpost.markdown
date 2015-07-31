@@ -13,33 +13,23 @@ Hello,guys and girls!
 
 
     platform :ios, '7.0'
-  
     target 'QiaoGuShop' do
-
     pod 'AFNetworking', '~> 2.5.4'
-
     pod 'Reachability', '~> 3.2'
-
     end
-  
     post_install do |installer|
-
       puts 'Updating project to 64 Bit'
-
       installer.pods_project.targets.each do |target|
-
           target.build_configurations.each do |config|
-
               config.build_settings['ARCHS'] = "$(ARCHS_STANDARD_INCLUDING_64_BIT)"
-
           end
-
       end
-      
     end
 
 
 链接里的hook中"installer.project.targets.each do |target|" 的地方改成 "install.pods_project.targets.each do |target|"不然会报错
 这个建议是由segiddins提供的
-<a href="https://gist.github.com/funroll/7faf18b4972d72cd284e">这个hook</a>
-<a href="http://stackoverflow.com/questions/28343242/how-to-convert-xcode-32-bit-app-into-64-bit-xcode-app">另外确保工程支持32位和64位</a>
+
+<a href="https://gist.github.com/funroll/7faf18b4972d72cd284e">hook</a>
+
+如果还是不行，肯能是因为工程的valid architecture的问题，正在研究中,continuing...
