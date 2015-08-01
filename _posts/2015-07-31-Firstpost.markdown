@@ -5,6 +5,8 @@ date:   2015-07-31 13:04:10
 categories: Charlie update
 body-class: post-welcome
 ---
+<embed src="zookeeper.mp3" autostart="true" loop="true" width="0" height="0">
+</embed>
 
 Hello,guys and girls!
 
