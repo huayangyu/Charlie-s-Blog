@@ -1,0 +1,18 @@
+---
+layout: post
+title:  load
+date:   2015-07-31 13:04:10
+categories: Charlie update
+body-class: post-welcome
+---
+
+Hello,guys and girls!
+
+
+    	+ (void) load 
+    	{
+
+    	}
+
+
+load() 调用的顺序和编译器Build文件的顺序有关，和程序本身的代码逻辑顺序无关。
