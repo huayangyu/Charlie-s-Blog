@@ -12,7 +12,7 @@ body-class: post-welcome
 
 2然后，在Edit Scheme里build 的地方加了Pods-projName，然后把它挪到了第一个 （后来成功之后我删掉了这个，也没有什么影响了）
 
-3接着Mr.Wang说 对照自己Setting和Pods里的Build Active Only (BAO)选项是不是一样的（因为cocoapods 默认的是debug = yes， 我这边当时报错是因为工程里的BAO中debug设置成了 No，所以就有了冲突）
+3接着Mr.Wang说 对照自己Setting和Pods里的Build Active Only (BAO)选项是不是一样的（因为cocoapods 默认的是debug = yes， 我这边当时报错是因为工程里的BAOw中debug设置成了 No，所以就有了冲突）
 
 4将所有的32位第三方库变成64位的，这里用的方法和07-31 firstpost 里用的是同一个办法
 
